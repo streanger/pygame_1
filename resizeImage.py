@@ -60,7 +60,7 @@ def autoResize(width=400):
 		resizing(imageFiles[x], newDir, width)
 	print("Konwersja zakonczona")	
 
-#single photo	
+#single photo resizing	
 #resizing('another.jpg', 'resized', 300)			
 autoResize(600)
 	
