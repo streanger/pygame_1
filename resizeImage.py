@@ -61,7 +61,9 @@ def autoResize(width=400):
 	print("Konwersja zakonczona")	
 
 #single photo resizing	
-#resizing('another.jpg', 'resized', 300)			
+#resizing('another.jpg', 'resized', 600)
+
+#all photos resizing
 autoResize(600)
 	
 
