@@ -49,10 +49,12 @@ def autoResize(width=400):
 	pathAbs = os.getcwd()
 	files = os.listdir()
 	imageFiles = []
+	#define more types as you wish
+	correctTypes = ('png','jpg','jpeg','bmp')
 	for x in range(len(files)):
 		dot = files[x].find('.')
 		types = files[x][dot+1:]
-		if (types == "png") or (types == "jpg") or (types == "jpeg"):
+		if (types in correctTypes):
 			imageFiles.append(files[x])
 	#specify the directory here
 	newDir = "converted"
@@ -60,8 +62,10 @@ def autoResize(width=400):
 		resizing(imageFiles[x], newDir, width)
 	print("Konwersja zakonczona")	
 
-#single photo	
-#resizing('another.jpg', 'resized', 300)			
+#single photo resizing	
+#resizing('another.jpg', 'resized', 600)
+
+#all photos resizing
 autoResize(600)
 	
 
